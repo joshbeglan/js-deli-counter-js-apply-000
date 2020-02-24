@@ -8,7 +8,10 @@ function nowServing(line) {
     return "There is nobody waiting to be served!";
   }
   
-  return "Currently serving " + line.splice(0, 1) + ".";
+  var lineLength = line.length;
+  
+  return "Currently serving" + line.splice(0, 1) + ".";
+  return "Currently serving" + (line.length + 1) + ".";
 }
 
 function currentLine(line) {
