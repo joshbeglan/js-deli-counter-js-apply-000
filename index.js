@@ -1,3 +1,5 @@
+var lineLength = line.length;
+
 function takeANumber(line, name) {
   line.push(name);
   return "Welcome, " + name + ". You are number " + line.length + " in line.";
@@ -7,8 +9,6 @@ function nowServing(line) {
   if (line.length < 1) {
     return "There is nobody waiting to be served!";
   }
-  
-  var lineLength = line.length;
   
   return "Currently serving" + line.splice(0, 1) + ".";
   return "Currently serving" + (line.length + 1) + ".";
